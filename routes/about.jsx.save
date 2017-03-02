@@ -1,0 +1,2 @@
+<ReactRouter.Route path='/' component={require('../Component.jsx')}>
+
