@@ -11,7 +11,7 @@ module.exports = React.createClass({
 			<html>
 			<head>
 				<title>{custom.title}</title>
-				<link rel='stylesheet' href='/style.css'/>
+				<link rel='stylesheet' href='/style.css' />
 			</head>
 			<body>
                         <div>
