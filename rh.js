@@ -10,7 +10,7 @@ app.use(express.static('public'));
 app.use(require('./routes/index.jsx'));
 
 
-var PORT = 8080;
-app.listen(PORT, function(){
+
+app.listen(process.env.PORT, function(){
 	console.log('http://localhost:')
 })
