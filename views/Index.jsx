@@ -6,8 +6,10 @@ module.exports = React.createClass({
         render: function(){ 
                 return(
 			<p>
-				Current: <strong>Testing Routes</strong>	
-			</p>
+				Current: <strong>Creating UI layout</strong>
+                <br>
+                ReleaseDate: <strong>March 26 2017</strong>
+            </p>
                 );
         }
 });
