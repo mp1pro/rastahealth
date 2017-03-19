@@ -12000,20 +12000,28 @@ module.exports = React.createClass({
 var React = __webpack_require__(6);
 
 module.exports = React.createClass({
-	displayName: 'Index',
+        displayName: 'Index',
 
-	render: function () {
-		return React.createElement(
-			'p',
-			null,
-			'Current: ',
-			React.createElement(
-				'strong',
-				null,
-				'Testing Routes'
-			)
-		);
-	}
+        render: function () {
+                return React.createElement(
+                        'div',
+                        null,
+                        React.createElement('p', null),
+                        'Current: ',
+                        React.createElement(
+                                'strong',
+                                null,
+                                'Creating UI layout'
+                        ),
+                        React.createElement('p', null),
+                        'ReleaseDate: ',
+                        React.createElement(
+                                'strong',
+                                null,
+                                'March 26 2017'
+                        )
+                );
+        }
 });
 
 /***/ }),
@@ -12025,7 +12033,7 @@ var React = __webpack_require__(6);
 module.exports = React.createClass({
 	displayName: 'layout',
 	_handleClick: function () {
-		alert('this is a test');
+		alert('this proves that reactjs is working');
 	},
 	render: function () {
 		var custom = this.props.custom;

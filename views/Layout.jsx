@@ -3,7 +3,7 @@ var React = require('react');
 module.exports = React.createClass({
 	displayName: 'layout',
 	_handleClick: function(){
-		alert('this is a test');
+		alert('this proves that reactjs is working');
 	},
         render: function(){
 		var custom = this.props.custom; 
