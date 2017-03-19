@@ -5,11 +5,12 @@ module.exports = React.createClass({
 	
         render: function(){ 
                 return(
-			<p>
+			<div>
+                <p></p>
 				Current: <strong>Creating UI layout</strong>
-                <br>
+                <p></p>
                 ReleaseDate: <strong>March 26 2017</strong>
-            </p>
+            </div>
                 );
         }
 });
