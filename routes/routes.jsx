@@ -13,7 +13,8 @@ if (typeof window === 'object'){
 }
 
 function fireTracking() {
-    ReactGA.pageview(window.location.hash);
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname );
 }
 
 module.exports = (
