@@ -12,8 +12,12 @@ if (typeof window === 'object'){
 	}
 }
 
+function fireTracking() {
+    ReactGA.pageview(window.location.hash);
+}
+
 module.exports = (
-    <Router history={browserHistory} createElement={createElement}>
+    <Router history={browserHistory} onUpdate={fireTracking} createElement={createElement}>
         <Route path='/' component={require('../views/Layout.jsx')}>
 		<IndexRoute  component={require('../views/Index.jsx')}/>
 		<Route path='about' component={require('../views/About.jsx')}/>
