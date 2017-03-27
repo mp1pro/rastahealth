@@ -27324,13 +27324,21 @@ module.exports = function (str) {
 /* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ReactDOM = __webpack_require__(112);
 var ReactGA = __webpack_require__(113);
+ReactGA.initialize('UA-96092916-1');
+var ReactDOM = __webpack_require__(112);
+
 var routes = __webpack_require__(111);
 
 
-ReactGA.initialize('UA-96092916-1');
 
+if (typeof window === 'object'){
+
+    function fireTracking() {
+        ReactGA.set({ page: window.location.pathname });
+        ReactGA.pageview(window.location.pathname );
+    }
+}
 
 
 ReactDOM.render(
