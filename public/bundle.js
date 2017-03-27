@@ -11972,11 +11972,10 @@ if (typeof window === 'object') {
     function createElement(Component, props) {
         return React.createElement(Component, _extends({}, props, { custom: window.PROPS }));
     }
-}
-
-function fireTracking() {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
+    function fireTracking() {
+        ReactGA.set({ page: window.location.pathname });
+        ReactGA.pageview(window.location.pathname);
+    }
 }
 
 module.exports = React.createElement(
@@ -27326,15 +27325,13 @@ module.exports = function (str) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var ReactDOM = __webpack_require__(112);
-var routes = __webpack_require__(111);
 var ReactGA = __webpack_require__(113);
+var routes = __webpack_require__(111);
 
-    ReactGA.initialize('UA-96092916-1');
 
-function fireTracking() {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname );
-}
+ReactGA.initialize('UA-96092916-1');
+
+
 
 ReactDOM.render(
     routes, document

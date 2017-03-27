@@ -4,18 +4,21 @@ var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var IndexRoute = ReactRouter.IndexRoute;
 
+
+
 var browserHistory = ReactRouter.browserHistory;
 
 if (typeof window === 'object'){
 	function createElement(Component,props){
 		return <Component {...props} custom = {window.PROPS} />;
 	}
+    function fireTracking() {
+        ReactGA.set({ page: window.location.pathname });
+        ReactGA.pageview(window.location.pathname );
+    }
 }
 
-function fireTracking() {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname );
-}
+
 
 module.exports = (
     <Router history={browserHistory} onUpdate={fireTracking} createElement={createElement}>
