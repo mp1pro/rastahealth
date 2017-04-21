@@ -9,7 +9,7 @@ module.exports = React.createClass({
                 <p></p>
 				Current: <strong>Creating UI layout</strong>
                 <p></p>
-                ReleaseDate: <strong>April 08 2017</strong>
+                ReleaseDate: <strong>May 01 2017</strong>
             </div>
                 );
         }
