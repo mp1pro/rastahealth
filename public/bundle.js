@@ -12549,7 +12549,7 @@ module.exports = React.createClass({
                         React.createElement(
                                 'strong',
                                 null,
-                                'April 08 2017'
+                                'May 01 2017'
                         )
                 );
         }
