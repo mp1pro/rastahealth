@@ -9046,7 +9046,7 @@ footer:after {
   }
 }
 header {
-  background-color: orange;
+  /*background-color: orange;*/
   border: solid black 3px;
   margin-right: auto;
   margin-left: auto;
@@ -9081,7 +9081,7 @@ header .header-1 {
   }
 }
 header .header-1 .logo {
-  background-color: green;
+  /*background-color: green;*/
   max-width: 100%;
   position: relative;
   min-height: 1px;
@@ -9155,7 +9155,7 @@ header .header-1 .logo .header-logo .little-x {
   }
 }
 header .header-1 .header-title {
-  background-color: orange;
+  /* background-color: orange;*/
   position: relative;
   min-height: 1px;
   padding-left: 0px;
@@ -9240,7 +9240,7 @@ header .header-2 {
   margin-right: 0px;
 }
 header .header-2 .menu-row {
-  background-color: brown;
+  /*background-color: brown;*/
   height: 40px;
   float: left;
   width: 100%;
@@ -9268,7 +9268,7 @@ header .header-2 .menu-row {
   }
 }
 header .header-2 .menu-row .menu-icon {
-  background-color: purple;
+  /*background-color: purple;*/
   /*height of menu-row*/
   height: 40px;
   float: left;
@@ -9303,7 +9303,7 @@ header .header-2 .menu-row .menu-icon .h-stripe {
   margin: 6px auto;
 }
 header .header-2 .menu-row .search {
-  background-color: green;
+  /*background-color: green;*/
   height: 40px;
   float: left;
   width: 66.66666667%;
@@ -9331,7 +9331,7 @@ header .header-2 .menu-row .search {
   }
 }
 header .header-2 .menu-row .search .search-blcok {
-  background-color: white;
+  /*background-color: white;*/
   margin: 0 auto;
   text-align: left;
   height: 40px;
@@ -9394,7 +9394,7 @@ header .header-2 .menu-row .logo-icon .header-logo {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   /*height: 200px;*/
-  background-color: yellow;
+  /*background-color: yellow;*/
   margin: 0 auto;
   padding-left: 0px;
   font-size: 26px;
@@ -9439,7 +9439,7 @@ header .header-2 .menu-row .nav-bar {
   padding-left: 0px;
   padding-right: 0px;
   display: none !important;
-  background-color: purple;
+  /*background-color: purple;*/
   height: 40px;
 }
 @media (min-width: 1024px) {
@@ -9503,7 +9503,7 @@ header .header-2 .menu-row .nav-bar ul li {
 }
 main {
   border: dashed blue 1px;
-  background-color: white;
+  /*background-color: white;*/
   margin-right: auto;
   margin-left: auto;
   padding-left: 0px;
@@ -9522,7 +9522,7 @@ main > .navbar-collapse {
   }
 }
 main nav {
-  background-color: pink;
+  /*background-color: pink;*/
   height: 800px;
   position: relative;
   min-height: 1px;
@@ -9576,7 +9576,7 @@ main nav ul li {
 }
 main .share {
   height: 800px;
-  background-color: grey;
+  /*background-color: grey;*/
   position: relative;
   min-height: 1px;
   padding-left: 0px;
@@ -9610,7 +9610,7 @@ main article {
   min-height: 1px;
   padding-left: 0px;
   padding-right: 0px;
-  background-color: blue;
+  /*background-color: blue;*/
   height: auto;
   font-size: 20px;
   padding: 10px !important;
@@ -9630,7 +9630,7 @@ main article {
 }
 main article .article-title {
   font-size: 30px;
-  background-color: white;
+  /*background-color: white;*/
   padding-bottom: 10px;
 }
 @media (min-width: 320px) {
@@ -9654,7 +9654,7 @@ main .right {
   padding-left: 0px;
   padding-right: 0px;
   display: none !important;
-  background-color: red;
+  /*background-color: red;*/
   height: 800px;
   border: solid green 3px;
 }
@@ -9676,7 +9676,7 @@ main .right {
   }
 }
 footer {
-  background-color: lavender;
+  /*background-color: lavender;*/
   margin-right: auto;
   margin-left: auto;
   padding-left: 0px;
