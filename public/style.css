@@ -9047,7 +9047,7 @@ footer:after {
 }
 header {
   /*background-color: orange;*/
-  border: solid black 3px;
+  /* border: solid black 3px;*/
   margin-right: auto;
   margin-left: auto;
   padding-left: 0px;
@@ -9502,7 +9502,7 @@ header .header-2 .menu-row .nav-bar ul li {
   }
 }
 main {
-  border: dashed blue 1px;
+  /*border: dashed blue 1px;*/
   /*background-color: white;*/
   margin-right: auto;
   margin-left: auto;
