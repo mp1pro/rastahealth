@@ -9656,7 +9656,7 @@ main .right {
   display: none !important;
   /*background-color: red;*/
   height: 800px;
-  border: solid green 3px;
+  border: solid green 1px;
 }
 @media (min-width: 1024px) {
   main .right {
