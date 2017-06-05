@@ -9681,6 +9681,7 @@ footer {
   margin-left: auto;
   padding-left: 0px;
   padding-right: 0px;
+  border-top: solid green 1px;
 }
 footer > .navbar-header,
 footer > .navbar-collapse {
