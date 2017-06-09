@@ -9189,6 +9189,7 @@ header .header-1 .header-title .header-title-center {
   /*background-color: #00b3ee;*/
   position: relative;
   text-align: left;
+  color: green;
 }
 @media (min-width: 1024px) {
   header .header-1 .header-title .header-title-center {
@@ -9217,6 +9218,7 @@ header .header-1 .header-title .slogan {
   font-size: 26px;
   margin: 0 auto;
   text-align: left;
+  color: yellow;
   position: relative;
 }
 @media (min-width: 1024px) {
