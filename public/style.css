@@ -9478,6 +9478,7 @@ header .header-2 .menu-row .nav-bar ul {
 header .header-2 .menu-row .nav-bar ul li {
   display: inline-block;
   height: 40px;
+  color: green;
   margin: 0 auto;
   width: 16.6%;
   list-style: none;
