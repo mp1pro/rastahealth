@@ -12,7 +12,7 @@ module.exports = React.createClass({
 			<head>
 				<title>{custom.title}</title>
 				<link rel='stylesheet' href='/style.css' />
-                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
 			</head>
 			<body>
                 <header>

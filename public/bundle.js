@@ -12580,7 +12580,8 @@ module.exports = React.createClass({
                     null,
                     custom.title
                 ),
-                React.createElement('link', { rel: 'stylesheet', href: '/style.css' })
+                React.createElement('link', { rel: 'stylesheet', href: '/style.css' }),
+                React.createElement('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' })
             ),
             React.createElement(
                 'body',
