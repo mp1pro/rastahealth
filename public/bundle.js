@@ -12587,6 +12587,11 @@ module.exports = React.createClass({
                 'body',
                 null,
                 React.createElement(
+                    'div',
+                    { className: 'testing' },
+                    'NOW: Building out status bar'
+                ),
+                React.createElement(
                     'header',
                     null,
                     React.createElement(

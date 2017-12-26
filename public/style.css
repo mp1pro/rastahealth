@@ -8766,6 +8766,8 @@ button.close {
 .modal-header:after,
 .modal-footer:before,
 .modal-footer:after,
+.testing:before,
+.testing:after,
 header:before,
 header:after,
 header .header-1:before,
@@ -8795,6 +8797,7 @@ footer:after {
 .panel-body:after,
 .modal-header:after,
 .modal-footer:after,
+.testing:after,
 header:after,
 header .header-1:after,
 header .header-2:after,
@@ -9043,6 +9046,75 @@ footer:after {
 @media print {
   .hidden-print {
     display: none !important;
+  }
+}
+.test {
+  background-color: ivory;
+}
+header {
+  background-color: orange;
+}
+.header-1 {
+  background-color: green;
+}
+.logo {
+  background-color: yellow;
+}
+.header-logo {
+  background-color: yellow;
+}
+.header-title {
+  background-color: orange;
+}
+.menu-row {
+  background-color: brown;
+}
+.search {
+  background-color: green;
+}
+.search-blcok {
+  background-color: white;
+}
+.nav-bar {
+  background-color: purple;
+}
+nav {
+  background-color: pink;
+}
+.share {
+  background-color: grey;
+}
+article {
+  background-color: blue;
+}
+.article-title {
+  background-color: white;
+}
+.right {
+  background-color: red;
+}
+footer {
+  background-color: lavender;
+}
+.testing {
+  background-color: ivory;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: red;
+  border-bottom: solid green 1px;
+}
+.testing > .navbar-header,
+.testing > .navbar-collapse {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+@media (min-width: 768px) {
+  .testing > .navbar-header,
+  .testing > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 header {
