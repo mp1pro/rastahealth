@@ -18,12 +18,12 @@ module.exports = React.createClass({
                 <div className="testing">Under Construction NOW: Building out status bar</div>
                 <header>
                     <div className="header-1">
-                        <div className="logo">
-                           {/* <!--<img src="http://placehold.it/250x250" className="img-responsive">-->*/}
+                        {/*<div className="logo">
+                           /!* <!--<img src="http://placehold.it/250x250" className="img-responsive">-->*!/
                             <div className="header-logo">
                                 <span className="big-x">R</span><span className="big-x">H</span><span className="little-x">X</span>
                             </div>
-                        </div>
+                        </div>*/}
                         <div className="header-title">
                             <div className="header-title-center">
                                 <span>RASTA</span><span>HEALTH</span><span></span>
