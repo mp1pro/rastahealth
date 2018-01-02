@@ -15,7 +15,7 @@ module.exports = React.createClass({
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 			</head>
 			<body>
-                <div className="testing">Under Construction NOW: Building out status bar</div>
+                <div className="testing">Under Construction NOW: Porting divs to semantic react components SHIP BY: Jan 9, 2018</div>
                 <header>
                     <div className="header-1">
                         {/*<div className="logo">
@@ -23,7 +23,7 @@ module.exports = React.createClass({
                             <div className="header-logo">
                                 <span className="big-x">R</span><span className="big-x">H</span><span className="little-x">X</span>
                             </div>
-                        </div>*/}
+                        </div>*/}   
                         <div className="header-title">
                             <div className="header-title-center">
                                 <span>RASTA</span><span>HEALTH</span><span></span>
