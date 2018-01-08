@@ -9048,54 +9048,6 @@ footer:after {
     display: none !important;
   }
 }
-.test {
-  background-color: ivory;
-}
-header {
-  background-color: orange;
-}
-.header-1 {
-  background-color: green;
-}
-.logo {
-  background-color: yellow;
-}
-.header-logo {
-  background-color: yellow;
-}
-.header-title {
-  background-color: orange;
-}
-.menu-row {
-  background-color: brown;
-}
-.search {
-  background-color: green;
-}
-.search-blcok {
-  background-color: white;
-}
-.nav-bar {
-  background-color: purple;
-}
-nav {
-  background-color: pink;
-}
-.share {
-  background-color: grey;
-}
-article {
-  background-color: blue;
-}
-.article-title {
-  background-color: white;
-}
-.right {
-  background-color: red;
-}
-footer {
-  background-color: lavender;
-}
 .testing {
   background-color: ivory;
   margin-right: auto;
