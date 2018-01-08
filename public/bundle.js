@@ -12589,7 +12589,7 @@ module.exports = React.createClass({
                 React.createElement(
                     'div',
                     { className: 'testing' },
-                    'NOW: Building out status bar'
+                    'UNDER CONSTRUCTION NOW: Porting divs to semantic react components SHIP BY: Jan 12, 2018'
                 ),
                 React.createElement(
                     'header',
@@ -12597,29 +12597,6 @@ module.exports = React.createClass({
                     React.createElement(
                         'div',
                         { className: 'header-1' },
-                        React.createElement(
-                            'div',
-                            { className: 'logo' },
-                            React.createElement(
-                                'div',
-                                { className: 'header-logo' },
-                                React.createElement(
-                                    'span',
-                                    { className: 'big-x' },
-                                    'R'
-                                ),
-                                React.createElement(
-                                    'span',
-                                    { className: 'big-x' },
-                                    'H'
-                                ),
-                                React.createElement(
-                                    'span',
-                                    { className: 'little-x' },
-                                    'X'
-                                )
-                            )
-                        ),
                         React.createElement(
                             'div',
                             { className: 'header-title' },
