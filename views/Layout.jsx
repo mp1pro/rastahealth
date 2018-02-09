@@ -15,7 +15,7 @@ module.exports = React.createClass({
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 			</head>
 			<body>
-                <div className="testing">UNDER CONSTRUCTION NOW: Porting divs to semantic react components SHIP BY: Jan 12, 2018</div>
+                <div className="testing">UNDER CONSTRUCTION NOW: Porting divs to semantic react components SHIP BY: Feb 12, 2018</div>
                 <header>
                     <div className="header-1">
                         {/*<div className="logo">
