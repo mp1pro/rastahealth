@@ -15,7 +15,7 @@ module.exports = React.createClass({
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 			</head>
 			<body>
-                <div className="testing">UNDER CONSTRUCTION NOW: Convert to ES6; SHIP BY: Feb 20, 2018</div>
+                <div className="testing">UNDER CONSTRUCTION NOW: Setting up config settings; SHIP BY: Feb 23, 2018</div>
                 <header>
                     <div className="header-1">
                         {/*<div className="logo">
