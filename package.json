@@ -1,0 +1,29 @@
+{
+  "name": "rastahealth.com",
+  "version": "1.0.0",
+  "description": "rastahealth react/node project",
+  "main": "rh.js",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-ga": "^2.4.1",
+    "react-router": "^3.2.0",
+    "react-scripts": "1.0.13"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mp1pro/rastahealth.git"
+  },
+  "author": "marvin parke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mp1pro/rastahealth/issues"
+  },
+  "homepage": "https://github.com/mp1pro/rastahealth#readme"
+}
