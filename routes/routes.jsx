@@ -1,13 +1,13 @@
-var ReactGA = require('react-ga');
-var React = require('react');
-var ReactRouter = require('react-router');
-var Router = ReactRouter.Router;
-var Route = ReactRouter.Route;
-var IndexRoute = ReactRouter.IndexRoute;
+const ReactGA = require('react-ga');
+const React = require('react');
+const ReactRouter = require('react-router');
+const Router = ReactRouter.Router;
+const Route = ReactRouter.Route;
+const IndexRoute = ReactRouter.IndexRoute;
 
 
 
-var browserHistory = ReactRouter.browserHistory;
+let browserHistory = ReactRouter.browserHistory;
 
 if (typeof window === 'object'){
 	function createElement(Component,props){

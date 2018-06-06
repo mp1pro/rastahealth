@@ -1,4 +1,4 @@
-var React = require('react');
+const React = require('react');
 
 module.exports = React.createClass({
 	displayName: 'layout',
@@ -6,7 +6,7 @@ module.exports = React.createClass({
 		alert('this proves that reactjs is working');
 	},
         render: function(){
-		var custom = this.props.custom;
+		let custom = this.props.custom;
                 return(
 			<html>
 			<head>
