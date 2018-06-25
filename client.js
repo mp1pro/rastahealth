@@ -1,8 +1,8 @@
-var ReactGA = require('react-ga');
+const ReactGA = require('react-ga');
 ReactGA.initialize('UA-96092916-1');
-var ReactDOM = require('react-dom');
+const ReactDOM = require('react-dom');
 
-var routes = require('./routes/routes.jsx');
+const routes = require('./routes/routes.jsx');
 
 
 
