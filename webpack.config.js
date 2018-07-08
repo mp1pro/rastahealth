@@ -1,5 +1,5 @@
 
-module.exports = {
+/*module.exports = {
 	entry: './client.js',
 	output: {
 		filename: 'bundle.js',
@@ -10,11 +10,30 @@ module.exports = {
 			{
 				test: /\.jsx$/,
 				exclude: /node_modules/,
-				loader: 'babel-loader',
-				query: {
-					presets: ['react']
-				}
+
+                use: {
+                    loader: "babel-loader"
+                }
 			}
 		]
 	}
+};*/
+module.exports = {
+    mode: 'development',
+    entry: './client.js',
+    output: {
+        filename: 'bundle.js',
+        path: '/var/www/rastahealth.com/public'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
+            }
+        ]
+    }
 };
