@@ -13,16 +13,20 @@ if (typeof window === 'object'){
 	function createElement(Component,props){
 		return <Component {...props} custom = {window.PROPS} />;
 	}
-    function fireTracking() {
+/*    function fireTracking() {
         ReactGA.set({ page: window.location.pathname });
         ReactGA.pageview(window.location.pathname );
     }
+
+ onUpdate={fireTracking}
+ */
+
 }
 
 
 
 module.exports = (
-    <Router history={browserHistory} onUpdate={fireTracking} createElement={createElement}>
+    <Router history={browserHistory}  createElement={createElement}>
         <Route path='/' component={require('../views/Layout.jsx')}>
 		<IndexRoute  component={require('../views/Index.jsx')}/>
 		    <Route path='about' component={require('../views/About.jsx')}/>
