@@ -8,25 +8,27 @@ const IndexRoute = ReactRouter.IndexRoute;
 
 
 let browserHistory = ReactRouter.browserHistory;
-
+/*
 if (typeof window === 'object'){
 	function createElement(Component,props){
 		return <Component {...props} custom = {window.PROPS} />;
 	}
-/*    function fireTracking() {
+    function fireTracking() {
         ReactGA.set({ page: window.location.pathname });
         ReactGA.pageview(window.location.pathname );
     }
 
+
+
+
+}
+ createElement={createElement}
  onUpdate={fireTracking}
  */
 
-}
-
-
 
 module.exports = (
-    <Router history={browserHistory}  createElement={createElement}>
+    <Router history={browserHistory} >
         <Route path='/' component={require('../views/Layout.jsx')}>
 		<IndexRoute  component={require('../views/Index.jsx')}/>
 		    <Route path='about' component={require('../views/About.jsx')}/>
