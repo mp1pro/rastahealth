@@ -8,8 +8,7 @@
     "react-dom": "^15.6.1",
     "react-ga": "^2.4.1",
     "react-router": "^3.2.0",
-    "react-scripts": "1.0.13",
-    "express":"express@^4.13.3"
+    "react-scripts": "1.0.13"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
