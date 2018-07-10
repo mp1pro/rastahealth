@@ -8,12 +8,13 @@ require('babel-register')({
 import PORT from './config/config';
 const imPORT = PORT;
 
-const express = require('express');
+//const express = require('express');
+import express from 'express';
 const app = express();
-
 app.use(express.static('public'));
 
-app.use(require('./routes/index.jsx'));
+import routes from './routes/index.jsx';
+app.use(routes);
 
 let port = process.env.PORT || imPORT.PORT;
 
