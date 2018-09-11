@@ -1,3 +1,25 @@
+import React from 'react';
+import {
+    Router,
+    Route,
+    IndexRoute,
+    browserHistory
+} from 'react-router';
+
+import Layout from '../views/Layout.jsx';
+import Index from '../views/Index.jsx';
+import About from '../views/About.jsx';
+
+module.exports = (
+    <Router history={browserHistory}>
+        <Route path='/' component={Layout}>
+            <IndexRoute component={Index} />
+            <Route path='about' component={About} />
+        </Route>
+    </Router>
+);
+
+/*
 const ReactGA = require('react-ga');
 const React = require('react');
 const ReactRouter = require('react-router');
@@ -8,7 +30,7 @@ const IndexRoute = ReactRouter.IndexRoute;
 
 
 let browserHistory = ReactRouter.browserHistory;
-/*
+/!*
 if (typeof window === 'object'){
 	function createElement(Component,props){
 		return <Component {...props} custom = {window.PROPS} />;
@@ -24,7 +46,7 @@ if (typeof window === 'object'){
 }
  createElement={createElement}
  onUpdate={fireTracking}
- */
+ *!/
 
 
 module.exports = (
@@ -35,3 +57,5 @@ module.exports = (
         </Route>
     </Router>
 );
+*/
+

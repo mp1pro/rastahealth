@@ -1,14 +1,24 @@
 //const React = require('react');
 import React from 'react';
 
-module.exports = React.createClass({
-	displayName: 'layout',
-	_handleClick: function(){
+class Layout extends React.Component{
+//module.exports = React.createClass({
+	//displayName: 'layout',
+
+    constructor(props) {
+        super(props);
+
+        this.state = {};
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+	handleClick(){
 		alert('this proves that reactjs is working');
-	},
-        render: function(){
+	}
+    render() {
 		let custom = this.props.custom;
-                return(
+        return(
 			<html>
 			<head>
 				<title>{custom.title}</title>
@@ -16,7 +26,7 @@ module.exports = React.createClass({
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 			</head>
 			<body>
-                <div className="testing">UNDER CONSTRUCTION NOW: ES5 to ES6 Conversion; SHIP BY: August 31,2018</div>
+                <div className="testing">UNDER CONSTRUCTION NOW: ES5 to ES6 Conversion; SHIP BY: September 15, 2018</div>
                 <header>
                     <div className="header-1">
                         {/*<div className="logo">
@@ -101,9 +111,10 @@ module.exports = React.createClass({
 			<script src="/bundle.js" />
 			</body>
 			</html>
-                );
-        }
-});
+        );
+    }
+}
 
+export default Layout;
 
 
