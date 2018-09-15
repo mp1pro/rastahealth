@@ -10,6 +10,16 @@ import Layout from '../views/Layout.jsx';
 import Index from '../views/Index.jsx';
 import About from '../views/About.jsx';
 
+if (typeof window === 'object'){
+    function createElement(Component,props){
+        return <Component {...props} {...window.PROPS} />;
+    }
+/*    function fireTracking() {
+        ReactGA.set({ page: window.location.pathname });
+        ReactGA.pageview(window.location.pathname );
+    }*/
+}
+
 module.exports = (
     <Router history={browserHistory}>
         <Route path='/' component={Layout}>

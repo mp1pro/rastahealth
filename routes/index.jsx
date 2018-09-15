@@ -19,7 +19,7 @@ router.get('*', function(request, response) {
             var html = ReactDOMServer.renderToString(
                 <ReactRouter.RouterContext {...renderProps}
 			createElement={function(Component, renderProps) {
-                        return <Component {...renderProps} custom = {props} />;
+                        return <Component {...renderProps} {...props} />;
                     }}
 		 />
             );
