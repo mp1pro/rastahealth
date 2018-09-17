@@ -1,10 +1,12 @@
 //const React = require('react');
 import React from 'react';
 
-module.exports = React.createClass({
-	displayName: 'Index',
-	
-        render: function(){ 
+
+/*module.exports = React.createClass({
+	displayName: 'Index',*/
+class Index extends React.Component{
+
+        render(){
                 return(
                     <article>
                         <div className="article-title">
@@ -27,7 +29,11 @@ module.exports = React.createClass({
                     </article>
                 );
         }
-});
+}
+/*});*/
+
+export default Index
+
 
 
 
