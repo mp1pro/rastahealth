@@ -9,6 +9,7 @@ import {
 import Layout from '../views/Layout.jsx';
 import Index from '../views/Index.jsx';
 import About from '../views/About.jsx';
+import Article from '../views/Article.jsx';
 
 if (typeof window === 'object'){
     function createElement(Component,props){
@@ -25,6 +26,12 @@ module.exports = (
         <Route path='/' component={Layout}>
             <IndexRoute component={Index} />
             <Route path='about' component={About} />
+            <Route path='article' component={Index} />
+                <Route path='article/:article'
+                       component={Article}
+                       render={(props) => <Article {...props} setTitle={this.setTitle} />}
+                />
+
         </Route>
     </Router>
 );

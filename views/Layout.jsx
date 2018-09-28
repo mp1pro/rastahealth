@@ -1,33 +1,85 @@
 //const React = require('react');
 import React from 'react';
 
+import Head from './components/Head';
+
 class Layout extends React.Component{
 //module.exports = React.createClass({
 	//displayName: 'layout',
 
     constructor(props) {
         super(props);
-
-        this.state = {};
+        console.log(props);
+        this.state = {
+            articles: [
+                {
+                    "title": "Molecule Man",
+                    "age": 29,
+                    "secretIdentity": "Dan Jukes",
+                    "powers": [
+                        "Radiation resistance",
+                        "Turning tiny",
+                        "Radiation blast"
+                    ]
+                },
+                {
+                    "title": "Madame Uppercut",
+                    "age": 39,
+                    "secretIdentity": "Jane Wilson",
+                    "powers": [
+                        "Million tonne punch",
+                        "Damage resistance",
+                        "Superhuman reflexes"
+                    ]
+                },
+                {
+                    "title": "Eternal Flame",
+                    "age": 1000000,
+                    "secretIdentity": "Unknown",
+                    "powers": [
+                        "Immortality",
+                        "Heat Immunity",
+                        "Inferno",
+                        "Teleportation",
+                        "Interdimensional travel"
+                    ]}
+            ],
+            title:"Rasta Health"
+        }
 
         this.handleClick = this.handleClick.bind(this);
+        this.setTitle = this.setTitle.bind(this);
+        this.getTitle = this.getTitle.bind(this);
     }
 
     handleClick() {
-        alert('test');
+        alert('This proves react is working');
         console.log('tapped');
     }
+
+    getTitle(){
+        return(this.state.title);
+    }
+
+    componentDidMount() {
+
+        console.log('I mount');
+        this.setTitle();
+    }
+
+    setTitle(){
+        this.setState({title: this.props.params.article});
+        console.log('set title to'+ this.props.params.article)
+    }
+
     render() {
 		let custom = this.props.custom;
         return(
 			<html>
-			<head>
-				<title>{}</title>
-				<link rel='stylesheet' href='/style.css' />
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-			</head>
+            {/*Head Component*/}
+			<Head title={this.getTitle()}/>
 			<body>
-                <div className="testing">UNDER CONSTRUCTION NOW: ES5 to ES6 Conversion; SHIP BY: September 15, 2018<button onClick={this.handleClick}>Click Me</button> </div>
+                <div className="testing">UNDER CONSTRUCTION NOW: modularize Components; SHIP BY: September 30, 2018    <button onClick={this.handleClick}>Test React</button> </div>
                 <header>
                     <div className="header-1">
                         {/*<div className="logo">
