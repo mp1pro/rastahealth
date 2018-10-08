@@ -97,7 +97,7 @@ class Layout extends React.Component{
             {/*Body Component*/}
 			<Body>
                 {/*Testing Component*/}
-                <Testing/>
+                <Testing handleClick={this.handleClick}/>
 
                 {/*Header Component*/}
                 <Header>
