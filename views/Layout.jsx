@@ -62,7 +62,7 @@ class Layout extends React.Component{
         }
 
         this.handleClick = this.handleClick.bind(this);
-        this.setTitle = this.setTitle.bind(this);
+        /*this.setTitle = this.setTitle.bind(this);*/
         this.getTitle = this.getTitle.bind(this);
     }
 
@@ -78,13 +78,13 @@ class Layout extends React.Component{
     componentDidMount() {
 
         console.log('I mount');
-        this.setTitle();
+        //this.setTitle();
     }
 
-    setTitle(){
+/*    setTitle(){
         this.setState({title: this.props.params.article});
         console.log('set title to'+ this.props.params.article)
-    }
+    }*/
 
     render() {
 		let custom = this.props.custom;
@@ -92,7 +92,7 @@ class Layout extends React.Component{
 			<HTML>
 
             {/*Head Component*/}
-			<Head title={this.getTitle()}/>
+			<Head />
 
             {/*Body Component*/}
 			<Body>

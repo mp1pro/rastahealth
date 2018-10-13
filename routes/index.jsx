@@ -1,28 +1,28 @@
-let router = require('express').Router();
-let React = require('react');
-let ReactDOMServer = require('react-dom/server');
-let ReactRouter = require('react-router');
+//let router = require('express').Router();
 
 
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import { StaticRouter } from 'react-router-dom';
+import express from 'express';
+const router = express();
+import Routes from './routes';
 router.get('*', function(request, response) {
     let props = { title: 'RASTAHEALTH' };
-    ReactRouter.match({
-        routes: require('./routes.jsx'),
-        location: request.url
-    }, function(error, redirectLocation, renderProps) {
-        if (renderProps) {
-            let html = ReactDOMServer.renderToString(
-                <ReactRouter.RouterContext {...renderProps}
-			createElement={function(Component, renderProps) {
-                        return <Component {...renderProps} {...props} />;
-                    }}
-		 />
-            );
+
+        let context = {}
+        let html = ReactDOMServer.renderToString(
+            <StaticRouter location={request.url} context={context}>
+                <Routes />
+            </StaticRouter>
+        );
+
+        if(html){
             response.send(html);
         } else {
             response.status(404).send('Not Found');
         }
-    });
+
 });
 
 module.exports = router;

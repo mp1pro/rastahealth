@@ -3,8 +3,11 @@ import {
     Router,
     Route,
     IndexRoute,
-    browserHistory
-} from 'react-router';
+    browserHistory,
+    Switch
+} from 'react-router-dom';
+
+import {StaticRouter} from 'react-router-dom';
 
 import Layout from '../views/Layout.jsx';
 import Index from '../views/Index.jsx';
@@ -21,20 +24,28 @@ if (typeof window === 'object'){
     }*/
 }
 
-module.exports = (
-    <Router history={browserHistory}>
-        <Route path='/' component={Layout}>
-            <IndexRoute component={Index} />
-            <Route path='about' component={About} />
-            <Route path='article' component={Index} />
-                <Route path='article/:article'
-                       component={Article}
-                       render={(props) => <Article {...props} setTitle={this.setTitle} />}
-                />
+class Routes extends React.Component {
+    render() {
+        return (
 
-        </Route>
-    </Router>
-);
+            <Switch>
+                <Route path='/' component={Layout}>
+                    {/*<IndexRoute component={Index}/>
+                    <Route path='about' component={About}/>
+                    <Route path='article' component={Index}/>
+                    <Route path='article/:article'
+                        //component={Article}
+                           render={(props) => <Article {...props} setTitle={this.setTitle}/>}
+                    />*/}
+
+                </Route>
+            </Switch>
+        );
+    };
+}
+
+export default Routes;
+
 
 /*
 const ReactGA = require('react-ga');

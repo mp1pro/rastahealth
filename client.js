@@ -1,9 +1,14 @@
 /*const ReactGA = require('react-ga');
 ReactGA.initialize('UA-96092916-1');*/
-const ReactDOM = require('react-dom');
+const React = require('react');
+//const ReactDOM = require('react-dom');
 
-const routes = require('./routes/routes.jsx');
+import ReactDOM from 'react-dom';
+import { BrowserRouter} from 'react-router-dom';
 
+//const Routes = require('./routes/routes.jsx');
+
+import Routes from './routes/routes.jsx';
 
 
 /*if (typeof window === 'object'){
@@ -16,7 +21,7 @@ const routes = require('./routes/routes.jsx');
 
 
 ReactDOM.render(
-    routes, document
+    <BrowserRouter><Routes/></BrowserRouter>, document
 );
 
 
