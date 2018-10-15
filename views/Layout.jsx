@@ -1,6 +1,15 @@
 //const React = require('react');
 import React from 'react';
 
+import {
+    Router,
+    Route,
+    IndexRoute,
+    browserHistory,
+    Switch,
+ BrowserRouter
+} from 'react-router-dom';
+
 import HTML from './components/HTML';
     import Head from './components/Head';
     import Body from './components/Body';
@@ -17,13 +26,14 @@ import HTML from './components/HTML';
 
 
 
+
 class Layout extends React.Component{
 //module.exports = React.createClass({
 	//displayName: 'layout',
 
     constructor(props) {
         super(props);
-        console.log(props);
+
         this.state = {
             articles: [
                 {
@@ -88,6 +98,8 @@ class Layout extends React.Component{
 
     render() {
 		let custom = this.props.custom;
+        console.log(this.props.match);
+        /*import About from './About';*/
         return(
 			<HTML>
 

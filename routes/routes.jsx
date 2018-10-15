@@ -18,35 +18,31 @@ if (typeof window === 'object'){
     function createElement(Component,props){
         return <Component {...props} {...window.PROPS} />;
     }
-/*    function fireTracking() {
-        ReactGA.set({ page: window.location.pathname });
-        ReactGA.pageview(window.location.pathname );
-    }*/
+
 }
 
 class Routes extends React.Component {
     render() {
         return (
-
-            <Switch>
-                <Route path='/' component={Layout}>
-                    {/*<IndexRoute component={Index}/>
-                    <Route path='about' component={About}/>
-                    <Route path='article' component={Index}/>
-                    <Route path='article/:article'
-                        //component={Article}
-                           render={(props) => <Article {...props} setTitle={this.setTitle}/>}
-                    />*/}
-
-                </Route>
-            </Switch>
+            <Layout>
+                <Switch>
+                    <Route exact path="/" component={Index}/>
+                    <Route exact path="/about" component={About}/>
+                </Switch>
+            </Layout>
         );
     };
 }
 
 export default Routes;
 
-
+{/*<IndexRoute component={Index}/>
+ <Route path='about' component={About}/>
+ <Route path='article' component={Index}/>
+ <Route path='article/:article'
+ //component={Article}
+ render={(props) => <Article {...props} setTitle={this.setTitle}/>}
+ />*/}
 /*
 const ReactGA = require('react-ga');
 const React = require('react');
@@ -86,4 +82,9 @@ module.exports = (
     </Router>
 );
 */
+
+/*    function fireTracking() {
+ ReactGA.set({ page: window.location.pathname });
+ ReactGA.pageview(window.location.pathname );
+ }*/
 
