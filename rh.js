@@ -14,5 +14,5 @@ const PORT = process.env.PORT || imPORT.PORT;
 
 app.listen(PORT, function(){
 	let test= 'testing';
-	console.log(test + ' http://localhost:')
+	console.log(test + ' http://localhost:' + PORT)
 })

@@ -77,7 +77,7 @@ class Layout extends React.Component{
     }
 
     handleClick() {
-        alert('This proves react is working');
+        alert('This suggests react was bundled correctly');
         console.log('tapped');
     }
 
