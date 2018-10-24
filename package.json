@@ -4,22 +4,24 @@
   "description": "rastahealth react/node project",
   "main": "rh.js",
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-ga": "^2.4.1",
-    "react-router": "^3.2.0",
+    "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.0.13"
+    "react-scripts": "2.0.5"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.4",
     "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "webpack": "^4.15.1",
+    "webpack": "^4.22.0",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-server": "^3.1.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

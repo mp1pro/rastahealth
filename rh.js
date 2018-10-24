@@ -1,6 +1,5 @@
-require('babel-register')({
-	presets: ['react']
-});
+require("@babel/register");
+
 const imPORT = require('./config/config');
 
 const express = require('express');
