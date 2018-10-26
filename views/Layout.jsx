@@ -35,39 +35,6 @@ class Layout extends React.Component{
         super(props);
 
         this.state = {
-            articles: [
-                {
-                    "title": "Molecule Man",
-                    "age": 29,
-                    "secretIdentity": "Dan Jukes",
-                    "powers": [
-                        "Radiation resistance",
-                        "Turning tiny",
-                        "Radiation blast"
-                    ]
-                },
-                {
-                    "title": "Madame Uppercut",
-                    "age": 39,
-                    "secretIdentity": "Jane Wilson",
-                    "powers": [
-                        "Million tonne punch",
-                        "Damage resistance",
-                        "Superhuman reflexes"
-                    ]
-                },
-                {
-                    "title": "Eternal Flame",
-                    "age": 1000000,
-                    "secretIdentity": "Unknown",
-                    "powers": [
-                        "Immortality",
-                        "Heat Immunity",
-                        "Inferno",
-                        "Teleportation",
-                        "Interdimensional travel"
-                    ]}
-            ],
             title:"Rasta Health"
         }
 
