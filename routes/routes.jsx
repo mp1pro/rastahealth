@@ -12,7 +12,9 @@ import {StaticRouter} from 'react-router-dom';
 import Layout from '../views/Layout.jsx';
 import Index from '../views/Index.jsx';
 import About from '../views/About.jsx';
+import Articles from '../views/Articles.jsx';
 import Article from '../views/Article.jsx';
+
 
 if (typeof window === 'object'){
     function createElement(Component,props){
@@ -28,6 +30,8 @@ class Routes extends React.Component {
                 <Switch>
                     <Route exact path="/" component={Index}/>
                     <Route exact path="/about" component={About}/>
+                    <Route exact path="/articles" component={Articles}/>
+                    <Route  path="/articles/:article" component={Article}/>
                 </Switch>
             </Layout>
         );

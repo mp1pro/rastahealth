@@ -6,7 +6,7 @@ class Article extends React.Component {
 
     render(){
         return(
-            <div>{this.props.params.article}</div>
+            <div>{this.props.match.params.article}</div>
         )
     }
 }
