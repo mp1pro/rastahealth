@@ -20,7 +20,7 @@ import Routes from './routes/routes.jsx';
 }*/
 
 
-ReactDOM.render(
+ReactDOM.hydrate(
     <BrowserRouter><Routes/></BrowserRouter>, document
 );
 
