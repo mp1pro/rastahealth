@@ -10,10 +10,8 @@ import {
 import {StaticRouter} from 'react-router-dom';
 
 import Layout from '../views/Layout.jsx';
-import Index from '../views/Index.jsx';
-import About from '../views/About.jsx';
-import Articles from '../views/Articles.jsx';
-import Article from '../views/Article.jsx';
+
+import Routes_config from './routes-config.jsx';
 
 
 if (typeof window === 'object'){
@@ -28,10 +26,14 @@ class Routes extends React.Component {
         return (
             <Layout>
                 <Switch>
-                    <Route exact path="/" component={Index}/>
-                    <Route exact path="/about" component={About}/>
-                    <Route exact path="/articles" component={Articles}/>
-                    <Route  path="/articles/:article" component={Article}/>
+                    {Routes_config.map(({ path, exact, component}) => (
+                        <Route
+                            key={path}
+                            path={path}
+                            exact={exact}
+                            component={component}
+                        />
+                    ))}
                 </Switch>
             </Layout>
         );
