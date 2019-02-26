@@ -19,7 +19,7 @@
 	}
 };*/
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './client.js',
     output: {
         filename: 'bundle.js',

@@ -25,7 +25,7 @@ import HTML from './components/HTML';
         import Footer from './components/Footer';
 
 
-
+import GraphQL from '../util/GitGraphQL';
 
 class Layout extends React.Component{
 //module.exports = React.createClass({
@@ -35,7 +35,9 @@ class Layout extends React.Component{
         super(props);
 
         this.state = {
-            title:"Rasta Health"
+            title:"Rasta Health",
+            lastCommit:'yes sir',
+            lastTime:'yes mam'
         }
 
         this.handleClick = this.handleClick.bind(this);
@@ -56,6 +58,19 @@ class Layout extends React.Component{
 
         console.log('I mount');
         //this.setTitle();
+
+        //add graphQL request for last commit here
+        GraphQL.getCommit().then(result => {
+            let m = result.data.node.author.date;
+            let d = new Date(m);
+            console.log(d.toString().slice(0,21)+' EST');
+            console.log('result 2',result.data.node.message);
+            this.setState({
+
+                lastCommit: result.data.node.message,
+                lastTime: d.toString().slice(0,21)+' EST'//result.commitTime
+            });
+        });
     }
 
 /*    setTitle(){
@@ -76,7 +91,11 @@ class Layout extends React.Component{
             {/*Body Component*/}
 			<Body>
                 {/*Testing Component*/}
-                <Testing handleClick={this.handleClick}/>
+                <Testing
+                    handleClick={this.handleClick}
+                    lastCommit={this.state.lastCommit}
+                    lastTime={this.state.lastTime}
+                />
 
                 {/*Header Component*/}
                 <Header>

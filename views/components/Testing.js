@@ -10,7 +10,7 @@ class Testing extends React.Component{
     }
     render() {
         return(
-            <div className="testing">UNDER CONSTRUCTION NOW: Setting up forms, API, mySQL and Redux; SHIP BY: FEB 28, 2019    <button onClick={this.props.handleClick}>Test React</button> </div>
+            <div className="testing"><div><b>LAST COMMIT:</b> {this.props.lastCommit}</div><div><b>LAST COMMIT TIME:</b> {this.props.lastTime}</div> <div><b>NEXT COMMIT:</b> Setting up forms; SHIP BY: FEB 28, 2019</div>    <button onClick={this.props.handleClick}>Test React</button> </div>
         );
     }
 }
