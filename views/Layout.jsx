@@ -36,8 +36,8 @@ class Layout extends React.Component{
 
         this.state = {
             title:"Rasta Health",
-            lastCommit:'yes sir',
-            lastTime:'yes mam'
+            lastCommit:'update NPM',
+            lastTime:'Fri Feb 22 2019 14:49 EST'
         }
 
         this.handleClick = this.handleClick.bind(this);

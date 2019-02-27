@@ -10,7 +10,11 @@ class Testing extends React.Component{
     }
     render() {
         return(
-            <div className="testing"><div><b>LAST COMMIT:</b> {this.props.lastCommit}</div><div><b>LAST COMMIT TIME:</b> {this.props.lastTime}</div> <div><b>NEXT COMMIT:</b> Setting up forms; SHIP BY: FEB 28, 2019</div>    <button onClick={this.props.handleClick}>Test React</button> </div>
+            <div className="testing" >
+                <div style={{color:'green'}}><b>LAST COMMIT:</b> {this.props.lastCommit}</div>
+                <div style={{color:'green'}}><b>LAST COMMIT TIME:</b> {this.props.lastTime}</div> <div><b>NEXT COMMIT:</b> Setting up forms; SHIP BY: FEB 28, 2019</div>
+                <button onClick={this.props.handleClick}>Test React</button>
+            </div>
         );
     }
 }

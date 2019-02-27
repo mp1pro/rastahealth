@@ -2,6 +2,10 @@
  * Created by mp1pro on 2/26/19.
  */
 
+import PKEY from '../config/config';
+
+const KEY=PKEY.PKEY;
+
 const GraphQL = {
     getCommit(){
         console.log('test grab');
@@ -10,9 +14,9 @@ const GraphQL = {
         return fetch('https://api.github.com/graphql', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'Authorization': 'bearer 0a473d10998e52d4a3178f8f7b69c59e716ae717'
+                'Content-Type': `application/json`,
+                Accept: 'application/json',
+                Authorization: `bearer ${KEY}`
             },
             body: JSON.stringify({
                 query: `{
