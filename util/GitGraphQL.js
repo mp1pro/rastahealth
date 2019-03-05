@@ -36,7 +36,7 @@ const GraphQL = {
                     },
                     body: JSON.stringify({
                         query: `{
-                            node(id:"MDY6Q29tbWl0Nzc3OTc0NDA6Y2QwMmZlZDQ5NDc3ZmFiNjhlOTczYzM5YWJmMGIxZmI0Yjc2YTIwMA==") {
+                            node(id:"MDY6Q29tbWl0Nzc3OTc0NDA6Njc5OTZjOTEyZjdkODRjOTU3N2YwNzA2ODRkNmY0OGFmNjA3Mjg2Yg==") {
                                 ... on Commit {
                                     author {
                                         date
@@ -50,6 +50,7 @@ const GraphQL = {
             })
             .then(r => r.json())
             .then(data => {
+                console.log('here ',data);
                 return data
             });
 
