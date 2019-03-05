@@ -14,7 +14,7 @@ const GraphQL = {
 
 
         //working fetch below
-        return fetch('http://localhost:8082/githubKey', {
+        return fetch('https://api.rastahealth.com/githubKey', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({})
