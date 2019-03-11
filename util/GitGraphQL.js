@@ -36,12 +36,14 @@ const GraphQL = {
                     },
                     body: JSON.stringify({
                         query: `{
-                            node(id:"MDY6Q29tbWl0Nzc3OTc0NDA6Njc5OTZjOTEyZjdkODRjOTU3N2YwNzA2ODRkNmY0OGFmNjA3Mjg2Yg==") {
-                                ... on Commit {
-                                    author {
-                                        date
+                            repository(owner:"mp1pro", name:"rastahealth"){
+                                object(expression: "master") {
+                                    ... on Commit {
+                                        author {
+                                            date
+                                        }
+                                        message
                                     }
-                                    message
                                 }
                             }
                         }`
@@ -50,9 +52,11 @@ const GraphQL = {
             })
             .then(r => r.json())
             .then(data => {
-                console.log('here ',data);
-                return data
+                let result = data.data.repository.object;
+                //console.log('here ',result);
+                return result;
             });
+            //.then(result => {console.log('here ',result); return result;});
 
 
         /*return fetch(`https://api.github.com/repos/mp1pro/rastahealth/commits/master`),

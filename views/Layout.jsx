@@ -61,13 +61,15 @@ class Layout extends React.Component{
 
         //add graphQL request for last commit here
         GraphQL.getCommit().then(result => {
-            let m = result.data.node.author.date;
+
+            let m = result.author.date;
             let d = new Date(m);
             //console.log(d.toString().slice(0,21)+' EST');
-            console.log('result 2',result);
+            //console.log('result 2',result);
+            console.log('date ',d);
             this.setState({
 
-                lastCommit: result.data.node.message,
+                lastCommit: result.message,
                 lastTime: d.toString().slice(0,21)+' EST'//result.commitTime
             });
         });
