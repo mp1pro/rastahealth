@@ -2,6 +2,7 @@ import Index from '../views/Index.jsx';
 import About from '../views/About.jsx';
 import Articles from '../views/Articles.jsx';
 import Article from '../views/Article.jsx';
+import Admin from '../views/Admin.jsx';
 
 
 const Routes_config =  [
@@ -24,6 +25,11 @@ const Routes_config =  [
     path: '/articles/:article',
     exact: true,
     component: Article
+    },
+    {
+    path: '/admin',
+    exact: true,
+    component: Admin
     }
 ]
 
