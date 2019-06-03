@@ -27,10 +27,10 @@ class Form extends React.Component {
 
     render() {
         return (
-            <div className="Form">
+            <form className="Form">
                 <input placeholder="Enter Article Title" onChange={this.handleTitleChange} />
                 <a onClick={this.submit}>SUBMIT</a>
-            </div>
+            </form>
         );
     }
 }
